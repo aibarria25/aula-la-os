@@ -26,8 +26,33 @@ a) No console vai ser impresso os numeros que sejam maior do que 18 (19, 21, 23,
 ***
 ****
 
-*/ 
-//xercícios de escrita de código
+
+//Exercícios de escrita de código
 //1- 
 
+const bichinhos = prompt("Quantos bichinhos de estimação você tem?:")
+let arrayNomes = []
+
+if (Number(bichinhos) === 0){
+  console.log("Que pena! Você pode adotar um pet!")
+}else{
+ for (let i = 0; i < bichinhos; i++){
+  let nomes = prompt("Quais sao os nomes deles?:")
+  arrayNomes.push(nomes)
+ }
+  console.log(arrayNomes)
+}
+
+ */
+//2-
+
+const array = [31, 28, 63, 36, 54, 97, 3]
+
+const arrayOriginal = () => { 
+for (let numero of array){
+  console.log(numero)
+}
+
+
+//b) Escreva um programa que imprime cada um dos valores do array original divididos por 10
 
