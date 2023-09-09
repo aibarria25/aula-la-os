@@ -42,17 +42,49 @@ if (Number(bichinhos) === 0){
  }
   console.log(arrayNomes)
 }
+*/
 
- */
 //2-
-
-const array = [31, 28, 63, 36, 54, 97, 3]
-
-const arrayOriginal = () => { 
-for (let numero of array){
+//a
+const arrayOriginal= [31, 28, 63, 36, 54, 97, 3]
+/*
+for (let numero of arrayOriginal){
   console.log(numero)
 }
 
 
-//b) Escreva um programa que imprime cada um dos valores do array original divididos por 10
+//b
+const divisao = (arrayOriginal) => {
+  for (let i = 0; i < arrayOriginal.length; i++){
+    const elementos = arrayOriginal[i] / 10
+    console.log(elementos)
+  }
+}
+divisao(arrayOriginal)
+
+//c
+ const numerosPares = (arrayOriginal) =>{
+  novoArray = []
+  for(let i = 0; i < arrayOriginal.length; i++){
+    const elementos = arrayOriginal[i] % 2 === 0
+    if (elementos){
+      novoArray.push(arrayOriginal[i])
+    }
+  }
+  console.log(novoArray)
+ }
+ numerosPares(arrayOriginal)
+
+//d
+const arrayStrings = (arrayOriginal) => {
+let  strings = []
+for (let i = 0 ; i < arrayOriginal.length; i++){
+   const frase = `Elemento do index ${i} é: ${arrayOriginal[i]}`
+    strings.push(frase)
+}
+console.log(strings)
+}
+arrayStrings(arrayOriginal)
+*/
+//e
 
