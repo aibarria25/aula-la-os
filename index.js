@@ -88,3 +88,13 @@ arrayStrings(arrayOriginal)
 */
 //e
 
+let mayor = 0
+let menor = arrayOriginal[0]
+
+for(i = 0; i < arrayOriginal.length; i++){
+  if (arrayOriginal[i] > mayor) 
+  mayor = arrayOriginal[i]
+if (arrayOriginal[i] < menor)
+menor = arrayOriginal[i]
+}
+console.log('O numero maior é ' + mayor + ' e o numero menor é ' + menor)
